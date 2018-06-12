@@ -4,15 +4,21 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, Alert, Image } from 'react-native';
 import AppIntro from 'react-native-app-intro';
 
+// #region constants
+
+// #endregion
+
 class Example extends Component {
   render() {
     return (
       <View style={styles.flexible}>
+        <Text>test</Text>
         <AppIntro
           onNextBtnClick={this.nextBtnHandle}
           onDoneBtnClick={this.doneBtnHandle}
           onSkipBtnClick={this.onSkipBtnHandle}
           onSlideChange={this.onSlideChangeHandle}
+          style={{ flex: 1 }}
         >
           <View style={[styles.slide, { backgroundColor: '#fa931d' }]}>
             <View style={styles.header}>

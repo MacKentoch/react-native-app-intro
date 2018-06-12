@@ -1,3 +1,5 @@
+// @flow
+
 import assign from 'assign-deep';
 import React, { Component } from 'react';
 import {
@@ -150,6 +152,7 @@ export default class AppIntro extends Component {
   setNextOpacity = value => {
     Animated.timing(this.state.nextOpacity, { toValue: value }).start();
   };
+
   getTransform = (index, offset, level) => {
     const isFirstPage = index === 0;
     const statRange = isFirstPage ? 0 : windowsWidth * (index - 1);
@@ -329,6 +332,7 @@ export default class AppIntro extends Component {
     const { pageArray } = this.props;
     let pages = [];
     let androidPages = null;
+
     if (pageArray.length > 0) {
       pages = pageArray.map((page, i) => this.renderBasicSlidePage(i, page));
     } else {
