@@ -28,7 +28,7 @@
   "homepage": "https://github.com/MacKentoch/react-native-app-intro#readme",
   "dependencies": {
     "assign-deep": "^0.4.7",
-    "react-native-swiper": "git+https://github.com/FuYaoDe/react-native-swiper.git"
+    "react-native-swiper": "git+https://github.com/fixt/react-native-page-swiper.git"
   },
   "devDependencies": {}
 }
